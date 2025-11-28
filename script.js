@@ -12,6 +12,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.12 });
 
+// Add .reveal to elements and observe them
 document.querySelectorAll(
   ".hero-content, .section, .card, .skill-group"
 ).forEach(el => {
