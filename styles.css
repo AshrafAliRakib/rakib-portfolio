@@ -98,12 +98,54 @@ main { max-width:1000px; margin:auto; padding:30px 20px 60px; }
 }
 .card-list { margin-left:18px; }
 
-/* Timeline */
-.timeline { border-left:2px solid rgba(148,163,184,0.4); padding-left:16px; }
-.timeline-item { margin-bottom:16px; position:relative; }
+/* Timeline / Education */
+.timeline {
+  position: relative;
+  border-left: 3px solid #1d4ed8;
+  padding-left: 24px;
+  margin-top: 18px;
+}
+
+.timeline-item {
+  margin-bottom: 24px;
+  position: relative;
+  padding: 10px 14px 10px 6px;
+  border-radius: 12px;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(30, 64, 175, 0.7);
+  box-shadow: 0 8px 26px rgba(15, 23, 42, 0.65);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+.timeline-item:hover {
+  transform: translateX(6px);
+  border-color: #38bdf8;
+  box-shadow: 0 14px 40px rgba(30, 64, 175, 0.55);
+  background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.08), rgba(15, 23, 42, 0.95));
+}
+
 .timeline-item::before {
-  content:""; width:10px; height:10px; border-radius:50%;
-  background:#38bdf8; position:absolute; left:-10px; top:5px;
+  content:"";
+  width:12px; height:12px;
+  border-radius:50%;
+  background:#38bdf8;
+  position:absolute;
+  left:-29px;
+  top:14px;
+  border:2px solid #0b1220;
+  box-shadow:0 0 0 3px rgba(56,189,248,0.25);
+}
+
+.timeline-item h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.timeline-meta {
+  font-size: 0.93rem;
+  color: #cbd5f5;
+  opacity: 0.9;
 }
 
 /* Contact */
